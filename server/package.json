@@ -1,0 +1,18 @@
+{
+  "name": "laika-portal-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/index.js",
+    "start:prueba": "node --env-file=prueba.env --disable-warning=ExperimentalWarning src/index.js",
+    "owner:setup": "node --disable-warning=ExperimentalWarning scripts/setup-owner.js",
+    "owner:setup:prueba": "node --env-file=prueba.env --disable-warning=ExperimentalWarning scripts/setup-owner.js",
+    "demo:mision": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/demo-mission.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

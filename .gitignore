@@ -1,0 +1,8 @@
+node_modules/
+# Database, encrypted files, owner login and server secret: never commit.
+server/data/
+server/data-prueba/
+.expo/
+web/dist/
+*.log
+.env*
